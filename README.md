@@ -7,7 +7,7 @@
 
 ### Firebase configuration
 
-  1. **Most importantly:** Copy and paste firebase db config into `./index.js`
+  1. **Most importantly:** Copy and paste firebase db config into `.env`
 
   2. Make sure to set firebase read/write rules to `true` in your firebase dashboard.
   ```json
@@ -25,7 +25,7 @@
 
 1. Clone the repo
 ```sh
-$ git clone https://github.com/dankreiger/react-electron-firebase.git
+$ git clone https://github.com/aminshamim/react-firebase-electron.git
 ```
 
 2. Run yarn (install dependencies)
