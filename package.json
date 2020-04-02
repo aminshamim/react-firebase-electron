@@ -1,0 +1,100 @@
+{
+  "name": "react-electron-firebase",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "bootstrap-input-spinner": "^1.11.4",
+    "classnames": "^2.2.5",
+    "electron-json-storage": "^4.1.6",
+    "firebase": "^5.5.8",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0",
+    "react": "^16.6.3",
+    "react-bootstrap-table": "^4.3.1",
+    "react-dom": "^16.6.3",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "recompose": "^0.30.0",
+    "tablesort": "^5.1.0"
+  },
+  "devDependencies": {
+    "electron": "^1.6.11",
+    "electron-builder": "^22.4.1",
+    "foreman": "^2.0.0",
+    "react-scripts": "^2.1.1"
+  },
+  "homepage": "./",
+  "main": "src/electron-starter.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "dev": "nf start -p 3000"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "build": {
+    "appId": "com.trinityinfosystem.electron.exchange.stream",
+    "productName": "Accurate",
+    "copyright": "Copyright © 2018 Trinity InfoSystem",
+    "mac": {
+      "category": "public.app-category.utilities",
+      "icon": "assets/icon.icns",
+      "target": [
+        "zip",
+        "dmg"
+      ],
+      "publish": [
+        "github"
+      ]
+    },
+    "win": {
+      "publisherName": "Trinity InfoSystem",
+      "publish": [
+        "github"
+      ],
+      "target": [
+        "nsis"
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "tar.gz"
+      ]
+    },
+    "dmg": {
+      "background": "assets/background.png",
+      "icon": "assets/icon.icns",
+      "title": "Accurate Installer"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "assets/icon.ico",
+      "installerSidebar": "assets/sidebar.bmp",
+      "uninstallerSidebar": "assets/sidebar.bmp",
+      "license": "assets/agreement.html",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "vkiranmaniya",
+        "repo": "accurate",
+        "vPrefixedTagName": true,
+        "private": true,
+        "releaseType": "draft"
+      }
+    ]
+  }
+}
